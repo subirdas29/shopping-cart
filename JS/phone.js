@@ -29,11 +29,12 @@ function plusMinus(isIncrease){
 
   
     function totalNumber (newValue){
-        const iphonePrice = document.getElementById('price');
+        const iphonePrice = document.getElementById('phone-price');
 
         const newPrice = newValue * 1219;
     
         iphonePrice.innerText = newPrice
+
     }
 
 
@@ -43,6 +44,8 @@ document.getElementById('btn-plus').addEventListener('click',function(){
     
     totalNumber(newValue);
 
+    calculatesubTotal()
+
 })
 
 document.getElementById('btn-minus').addEventListener('click',function(){
@@ -50,7 +53,7 @@ document.getElementById('btn-minus').addEventListener('click',function(){
     const newValue = plusMinus(false)
 
     totalNumber(newValue);
-
+    calculatesubTotal()
   
 })
 

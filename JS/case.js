@@ -7,6 +7,8 @@ document.getElementById('btn-case-plus').addEventListener('click',function(){
     const casePrice = document.getElementById('case-price')
     const updateCasePrice = caseValue.value * 59;
     casePrice.innerText = updateCasePrice
+    calculatesubTotal()
+   
 })
 
 document.getElementById('btn-case-minus').addEventListener('click',function(){
@@ -18,5 +20,7 @@ document.getElementById('btn-case-minus').addEventListener('click',function(){
     const casePrice = document.getElementById('case-price')
     const updateCasePrice = caseValue.value * 59;
     casePrice.innerText = updateCasePrice
+    calculatesubTotal()
+    
 })
 
